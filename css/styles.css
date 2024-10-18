@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Mulish:wght@400;700&display=swap');
+
+/* General Styles */
+* {
+    box-sizing: border-box; /* Ensure all elements have box-sizing property */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto as the default font-family */
+    background-color: #f1d79e; /* Light gray background color */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* Styling for the header section */
+.header {
+    grid-column: span 12;
+    text-align: left; /* Align header text to the left */
+    margin-bottom: 50px;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header h1 {
+    font-family: 'Mulish', sans-serif; /* Apply Mulish to h1 */
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #d28d16;
+    text-align: left; /* Ensure h1 is left-aligned */
+}
+
+.description {
+    font-size: 1.1em;
+    color: #333;
+    max-width: 600px;
+    margin: 0 0 20px 0;
+    text-align: left; /* Ensure description is left-aligned */
+}
+
+/* Link styles */
+a {
+    color: #333;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.3s;
+    text-align: left; /* Ensure links are left-aligned */
+}
+
+a:hover {
+    color: #555;
+}
+
+/* Main container grid */
+.container {
+    max-width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+/* First Section */
+.first-section {
+    grid-column: span 12;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-section h2 {
+    font-family: 'Mulish', sans-serif; /* Apply Mulish to h2 */
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #333;
+    text-align: left;
+    max-width: 600px; /* Ensure text wrapping by setting max-width */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+}
+
+.first-section p {
+    max-width: 600px;
+    color: #333;
+    text-align: left;
+}
+
+/* Flexbox Image Grid */
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0 40px;
+}
+
+.image-item {
+    flex: 1;
+    position: relative;
+}
+
+/* Image Styles */
+.image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #333;
+    transition-property: transform, border-radius;
+    transition-duration: 0.3s;
+}
+
+/* Hover Effects on Images */
+.image-item img:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+/* Center the last image and give it a border */
+.centered {
+    text-align: left;
+    margin: 0 40px;
+}
+
+.centered img {
+    border: 5px solid #333;
+}
+
+/* Final Section */
+.final-section {
+    grid-column: span 12;
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.final-section h2 {
+    font-family: 'Mulish', sans-serif; /* Apply Mulish to h2 in the final section */
+    font-size: 2em;
+    color: #333;
+    text-align: left;
+    max-width: 600px; /* Ensure text wrapping by setting max-width */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+}
+
+/* Footer Styles */
+.footer {
+    grid-column: span 12;
+    background-color: #000000;
+    color: #333;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+/* Responsive Breakpoint for 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .image-grid {
+        flex-direction: column;
+    }
+
+    .image-item img {
+        height: auto;
+    }
+}
