@@ -3,15 +3,15 @@
 /* General Styles */
 * {
     box-sizing: border-box; /* Ensure all elements have box-sizing property */
+    margin: 0; /* Remove all default margins */
+    padding: 0; /* Remove all default paddings */
 }
 
 body {
     font-family: 'Roboto', sans-serif; /* Use Roboto for the body */
-    background-color: #f1d79e; /* Single light gray background color */
-    color: #333; /* Single dark gray text color */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6; /* Added line-height for text */
+    background-color: #f1d79e; /* Background color */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Line height for text */
 }
 
 /* Styling for the header section */
@@ -19,47 +19,48 @@ body {
     grid-column: span 12;
     text-align: left; /* Ensure text is aligned to the left */
     margin-bottom: 50px;
-    padding: 20px 40px; /* Add padding for space */
+    padding: 20px; /* Padding for space */
     max-width: 1200px; /* Limit the width */
     margin-left: auto;
     margin-right: auto;
 }
 
 .header h1 {
-    font-size: 3em; /* Use font-size in em */
+    font-size: 3em; /* Font size in em */
     margin-bottom: 10px;
-    text-transform: uppercase; /* Use text-transform */
-    font-weight: 700; /* Use font-weight */
-    color: #d28d16; /* Single text color */
+    text-transform: uppercase; /* Text transform */
+    font-weight: 700; /* Use a non-default font weight */
+    color: #d28d16; /* Title color */
     text-align: left; /* Ensure h1 is left-aligned */
-    margin: 0; /* Uniform margin */
 }
 
 .description {
-    font-size: 1.1em; /* Use font-size in em */
-    color: #333; /* Single text color */
+    font-size: 1.1em; /* Font size in em */
+    color: #333; /* Text color */
     max-width: 600px;
-    margin: 0; /* Uniform margin */
     text-align: left; /* Ensure description is left-aligned */
 }
 
 /* Link styles */
 a {
-    color: #333; /* Single text color */
+    color: #333; /* Text color */
     text-decoration: none;
     transition-property: color; /* Transition property for hover */
     transition-duration: 0.3s; /* Duration of transition effect */
-    text-align: left; /* Ensure links are left-aligned */
+}
+
+.header a {
+    margin-left: 5cm; /* Shift Instagram link slightly to the right */
 }
 
 a:hover {
-    color: #555; /* Slightly darker hover effect */
+    color: #555; /* Darker hover effect */
 }
 
 /* Main container grid */
 .container {
     max-width: 100%;
-    padding: 0 40px; /* Use padding */
+    padding: 0; /* Remove left and right padding */
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* 12-column grid system */
@@ -72,27 +73,24 @@ a:hover {
     grid-column: span 12;
     margin-bottom: 50px;
     text-align: left; /* Align text to the left */
-    padding-left: 40px; /* Use padding */
+    padding-left: 0; /* Remove left padding to align */
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .first-section h2 {
-    font-size: 2em; /* Use font-size in em */
+    font-size: 2em; /* Font size in em */
     margin-bottom: 10px;
     text-transform: capitalize; /* Capitalize first letters */
-    color: #333; /* Single text color */
+    color: #333; /* Text color */
     text-align: left; /* Ensure h2 is left-aligned */
-    margin: 0; /* Uniform margin */
 }
 
 .first-section p {
     max-width: 600px;
-    color: #333; /* Single text color */
+    color: #333; /* Text color */
     text-align: left; /* Ensure paragraphs are left-aligned */
-    margin: 0; /* Uniform margin */
-    font-family: 'Roboto', sans-serif; /* Ensure Roboto font for paragraphs */
 }
 
 /* Flexbox Image Grid */
@@ -100,7 +98,7 @@ a:hover {
     display: flex; /* Use display: flex */
     justify-content: space-between; /* Use justify-content */
     gap: 15px;
-    padding: 0 40px; /* Padding for images */
+    padding: 0; /* Remove padding */
 }
 
 .image-item {
@@ -127,7 +125,7 @@ a:hover {
 /* Center the last image and give it a border */
 .centered {
     text-align: left; /* Left align text in centered section */
-    margin: 0 40px; /* Use margin */
+    margin: 0; /* Remove margin */
 }
 
 .centered img {
@@ -139,30 +137,25 @@ a:hover {
     grid-column: span 12;
     text-align: left; /* Align text to the left */
     margin-top: 30px;
-    padding-left: 40px; /* Padding for spacing */
+    padding-left: 0; /* Remove left padding */
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.final-section h2 {
-    font-size: 2em; /* Use font-size */
-    color: #333; /* Single text color */
-    text-align: left; /* Ensure h2 in final section is left-aligned */
-    margin: 0; /* Uniform margin */
-}
-
-.final-section p {
-    margin: 0; /* Uniform margin */
-    font-family: 'Roboto', sans-serif; /* Ensure Roboto font for the final paragraph */
+.final-section h2, .final-section p {
+    font-family: 'Mulish', sans-serif; /* Use Mulish font */
+    font-size: 2em; /* Font size */
+    color: #333; /* Text color */
+    text-align: left; /* Align text to the left */
 }
 
 /* Footer Styles */
 .footer {
     grid-column: span 12;
-    background-color: #000000; /* Single background color */
-    color: #333; /* Single text color */
-    padding: 20px 40px; /* Use padding */
+    background-color: #000000; /* Background color */
+    color: #333; /* Text color */
+    padding: 20px; /* Uniform padding */
     text-align: left; /* Align footer text to the left */
 }
 
